@@ -1,0 +1,1 @@
+labki z paradygmatów
