@@ -1,0 +1,25 @@
+(defun parzysta ()
+  (format t "Podaj liczbê: ")
+  (finish-output)
+  (let ((liczba1 (read)))
+     (if (evenp liczba1) `pazrysta `nieparzysta)
+)
+
+
+(defun silnia (x)
+  (if (> x 0)
+      (* x (silnia (- x 1)))
+      1))
+
+(defun silniaWyw ()
+  (format t "Podaj liczbê: ")
+  (finish-output)
+  (let ((liczba1 (read)))
+     (silnia liczba1)
+)
+)
+
+(defun fibonacci (n)
+  (if (or (= n 1) (= n 2))
+      1
+      (+ (fibonacci (- n 1)) (fibonacci (- n 2)))))
